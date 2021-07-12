@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { SuccessComponent } from './success/success.component';
 import { FailComponent } from './fail/fail.component';
+import { ButtonComponent } from './form/controls/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     SuccessComponent,
-    FailComponent
+    FailComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
