@@ -1,0 +1,21 @@
+.btn {
+  display: block;
+  width: 370px;
+  height: 45px;
+  padding: 10px 73px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background: #23c967;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  text-align: center;
+  transition: 0.5;
+
+  &:hover {
+    background: darken(#23c967, 10%);
+  }
+}
