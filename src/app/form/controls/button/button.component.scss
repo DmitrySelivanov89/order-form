@@ -1,0 +1,32 @@
+:host {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  display: block;
+  width: 370px;
+  height: 45px;
+  padding: 10px 73px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+
+  &.primary {
+    background: #23c967;
+
+    &:hover {
+      background: darken(#23c967, 10%);
+    }
+  }
+
+  &.warning {
+    background: #ea717f;
+
+    &:hover {
+      background: darken(#ea717f, 10%);
+    }
+  }
+}

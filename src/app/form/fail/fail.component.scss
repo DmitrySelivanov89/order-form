@@ -1,4 +1,4 @@
-.success-wrapper {
+.fail-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
     font-weight: bold;
   }
 
-  .success {
+  .fail {
     font-size: 16px;
     font-weight: 400;
     margin-top: 12px;
@@ -24,6 +24,6 @@
     position: absolute;
     width: 80%;
     height: 80%;
-    background: no-repeat center url(/assets/images/icon-success-payment.png);
+    background: no-repeat center url(/assets/images/icon-fail-payment.png);
   }
 }

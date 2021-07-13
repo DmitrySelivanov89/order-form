@@ -1,14 +1,13 @@
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  padding: 35px 35px 19px 35px;
-  margin: 138px 141px 155px 755px;
-  border-radius: 0 50px 50px 50px;
-  background-color: #fff;
   width: 440px;
   height: 535px;
+  padding: 35px 35px 19px 35px;
+  border-radius: 0 50px 50px 50px;
+  background-color: #fff;
 }
 
 form {
@@ -19,76 +18,64 @@ form {
   height: 369px;
 
   label {
-    font-weight: 500;
     font-size: 16px;
+    font-weight: 500;
   }
 
   input {
     font-size: 16px;
     font-weight: 500;
-    border: none;
     height: 19px;
+    border: none;
   }
 
   .hr {
     position: relative;
 
     &::after {
-      content: "";
       position: absolute;
-      width: 370px;
-      left: 0;
       top: 0;
+      left: 0;
+      width: 370px;
+      content: "";
       opacity: 0.5;
       border: 1.5px solid #e1e3ee;
     }
   }
 
   .secure {
-    background: url(/assets/images/icon-secure.svg) no-repeat;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 11px;
     text-align: center;
+    opacity: 0.5;
+    background: 80px 0 url(/assets/images/icon-secure.svg) no-repeat;
   }
 
   .add-btn-wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
     color: #23c967;
 
     .add-products {
-      font-weight:600;
       font-size: 18px;
+      font-weight: 600;
     }
 
     .add-btn {
-      background:url(/assets/images/icon-add.svg) no-repeat;
+      position: absolute;
+      bottom: -3px;
+      left: 165px;
+      width: 100%;
+      height: 100%;
+      background: url(/assets/images/icon-add.svg) no-repeat;
     }
-  }
-}
-
-.btn {
-  display: block;
-  width: 370px;
-  height: 45px;
-  padding: 10px 73px;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-  color: #fff;
-  cursor: pointer;
-  background: #23c967;
-  border: none;
-  border-radius: 15px;
-  outline: none;
-  text-align: center;
-  transition: 0.5;
-
-  &:hover {
-    background: darken(#23c967, 10%);
   }
 }
 
 h3 {
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
 }

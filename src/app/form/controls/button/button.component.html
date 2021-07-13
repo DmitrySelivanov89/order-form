@@ -1,1 +1,7 @@
-<p>button works!</p>
+<span *ngIf='loading; else text' class="loader">Continue</span>
+
+<ng-template #text>
+  <span class="text">
+    <ng-content></ng-content>
+  </span>
+</ng-template>
