@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { AddProductsComponent } from './add-products.component'
+import { RadioComponent } from './radio.component'
 
 describe('AddproductsComponent', () => {
-  let component: AddProductsComponent
-  let fixture: ComponentFixture<AddProductsComponent>
+  let component: RadioComponent
+  let fixture: ComponentFixture<RadioComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AddProductsComponent]
+      declarations: [RadioComponent]
     })
       .compileComponents()
   })
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AddProductsComponent)
+    fixture = TestBed.createComponent(RadioComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })

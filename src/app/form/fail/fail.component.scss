@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 440px;
   height: 535px;
-  margin: 138px 141px 155px 755px;
+  margin: auto;
   padding: 35px 35px 19px 35px;
   border-radius: 0 50px 50px 50px;
   background-color: #fff;
@@ -25,5 +25,10 @@
     width: 80%;
     height: 80%;
     background: no-repeat center url(/assets/images/icon-fail-payment.png);
+  }
+
+  app-button {
+    position: absolute;
+    bottom: 66px;
   }
 }

@@ -1,0 +1,11 @@
+<div class="radio-group">
+  <label *ngFor="let option of options" class="radio-group__radio"
+         [ngClass]="{'radio-group__radio--checked': value === option.value}" (click)="onChange(option.value)">
+    <input [checked]="value" name="product" type="radio" [value]="option.value">
+    <div class="radio__circle"></div>
+    <div class="radio__text">
+      <span class="text__title">{{option.title}}</span>
+      <span class="text__subtitle">{{option.subtitle}}</span>
+    </div>
+  </label>
+</div>

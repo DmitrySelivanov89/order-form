@@ -1,27 +1,37 @@
 <div class="wrapper">
-  <form action="#" method="post" tabindex="1">
-    <h3>Info</h3>
-    <label for="email">Enter your email address</label>
-    <input class="email" id="email" name="email" placeholder="team@checkforpatent.com" tabindex="2" type="email">
-    <div class="hr"></div>
+  <div class="content">
+    <ng-container *ngIf="step === 'home'">
+      <h3>Info</h3>
+      <label for="email">
+        <span class="subtitle">Enter your email address</span>
+        <input class="email input-text" id="email" name="email" placeholder="team@checkforpatent.com" tabindex="2" type="email">
+      </label>
 
-    <h3>Product 1</h3>
-    <label for="product">Enter main keyword for the product</label>
-    <input class="product" id="product" name="product" placeholder="for example, sylicon wine cup" tabindex="3"
-           type="text">
-    <div class="hr"></div>
+      <h3>Product 1</h3>
+      <label for="product">
+        <span class="subtitle">Enter main keyword for the product</span>
+        <input class="product input-text" id="product" name="product" placeholder="for example, silicon wine cup" tabindex="3"
+               type="text">
+      </label>
 
-    <label for="url">Enter link to the similar product as a reference</label>
-    <input class="url" id="url" name="url" placeholder="https://..." tabindex="4" type="url">
-    <div class="hr"></div>
+      <label for="url">
+        <span class="subtitle">Enter link to the similar product as a reference</span>
+        <input class="url input-text" id="url" name="url" placeholder="https://..." tabindex="4" type="url">
+      </label>
 
-    <div class="add-btn-wrapper">
-      <label class='add-products' for="add-btn">Add more products</label>
-      <input class="add-btn" id="add-btn" name="button" tabindex="5" type="button">
-    </div>
-    <p class="discount">We offer discount up to 36% for multiple checks</p>
-    <app-button #pbtn (click)='handleClick(pbtn)' class="primary">Submit and Pay 24.99 USD</app-button>
-    <p class="secure">Secure payment with Stripe</p>
+      <div class="add-btn-wrapper">
+        <div class='add-products' (click)="step = 'addProducts'">
+          Add more products
+        </div>
+      </div>
+      <p class="discount">We offer discount up to 36% for multiple checks</p>
+      <app-button class="primary">Submit and Pay 24.99 USD</app-button>
+      <p class="secure">Secure payment with Stripe</p>
+    </ng-container>
 
-  </form>
+    <ng-container *ngIf="step === 'addProducts'">
+      <app-radio [options]="radioOptions" [formControl]="radioCtrl"></app-radio>
+    </ng-container>
+
+  </div>
 </div>

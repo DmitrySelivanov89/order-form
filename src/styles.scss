@@ -352,9 +352,9 @@ template {
 
 @font-face {
   font-family: "Gilroy";
-  src: url(assets/fonts/Gilroy-Medium.ttf) format("truetype"),
-  url(assets/fonts/Gilroy-SemiBold.ttf) format("truetype"),
-  url(assets/fonts/Gilroy-Bold.ttf) format("truetype");
+  src: url(/assets/fonts/Gilroy-Medium.ttf) format("truetype"),
+  url(/assets/fonts/Gilroy-SemiBold.ttf) format("truetype"),
+  url(/assets/fonts/Gilroy-Bold.ttf) format("truetype");
 }
 
 * {
@@ -365,5 +365,5 @@ template {
 }
 
 body {
-  background: #e5e5e5;
+  background: #f4f5fa;
 }
