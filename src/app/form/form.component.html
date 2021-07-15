@@ -1,23 +1,10 @@
 <div class="wrapper">
   <div class="content">
     <ng-container *ngIf="step === 'home'">
-      <h3>Info</h3>
-      <label for="email">
-        <span class="subtitle">Enter your email address</span>
-        <input class="email input-text" id="email" name="email" placeholder="team@checkforpatent.com" tabindex="2" type="email">
-      </label>
 
-      <h3>Product 1</h3>
-      <label for="product">
-        <span class="subtitle">Enter main keyword for the product</span>
-        <input class="product input-text" id="product" name="product" placeholder="for example, silicon wine cup" tabindex="3"
-               type="text">
-      </label>
-
-      <label for="url">
-        <span class="subtitle">Enter link to the similar product as a reference</span>
-        <input class="url input-text" id="url" name="url" placeholder="https://..." tabindex="4" type="url">
-      </label>
+      <ng-container>
+        <app-input></app-input>
+      </ng-container>
 
       <div class="add-btn-wrapper">
         <div class='add-products' (click)="step = 'addProducts'">

@@ -8,7 +8,8 @@ import { RadioComponent } from './form/controls/radio/radio.component'
 import { ButtonComponent } from './form/controls/button/button.component'
 import { FailComponent } from './form/fail/fail.component'
 import { FormComponent } from './form/form.component'
-import { SuccessComponent } from './success/success.component'
+import { SuccessComponent } from './success/success.component';
+import { InputComponent } from './form/controls/input/input.component'
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SuccessComponent } from './success/success.component'
     SuccessComponent,
     FailComponent,
     ButtonComponent,
-    RadioComponent
+    RadioComponent,
+    InputComponent
   ],
     imports: [
         BrowserModule,
